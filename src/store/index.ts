@@ -7,7 +7,7 @@ const state: State = { counter: 0 };
 export const store = createStore({
   state,
   mutations: {
-    increment(state, payload) {
+    increment(state) {
       state.counter++;
     }
   },
