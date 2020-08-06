@@ -18,7 +18,7 @@ import { useStore } from "vuex";
 export default defineComponent({
   setup() {
     const store = useStore();
-    const count = ref(store.state);
+    const count = ref(store.state); // make it reactive
     const inc = () => {
       store.commit("increment");
     };
