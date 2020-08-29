@@ -1,17 +1,20 @@
 <template>
   <div class="home">
-    <Counter msg="Welcome to Your Vue.js App" />
+    <CounterWithStore msg="Welcome to Your Vue.js App" />
+    <Sum />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Counter from "@/components/Counter.vue";
+import CounterWithStore from "@/components/CounterWithStore.vue";
+import Sum from "@/components/Sum.vue";
 
 export default {
   name: "Home",
   components: {
-    Counter
+    CounterWithStore,
+    Sum
   }
 };
 </script>
