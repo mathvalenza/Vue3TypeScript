@@ -1,15 +1,15 @@
 <template>
   <div class="add">
-        <h3>Addition Calculator</h3>
-        <form id="sumComp">
-            <input class="form-control" v-model="num1">
-            <input class="form-control" v-model="num2">
-            <button @click="addNumbers" type="button" class="btn btn-light">
-            Add me!
+    <h3 class="text-xl font-semibold">Addition Calculator</h3>
+      <form id="sumComp">
+        <input class="form-control" v-model="num1">
+        <input class="form-control" v-model="num2">
+        <button @click="addNumbers" type="button" class="btn bg-gray-300 p-3 rounded">
+          Add me!
         </button>
-        </form>
-        <p><strong>Sum:</strong> {{ sum }}</p>
-    </div>
+      </form>
+    <p><strong>Sum:</strong> {{ sum }}</p>
+  </div>
 </template>
 
 <script>
@@ -40,7 +40,7 @@ export default defineComponent({
 
 <style scoped>
     .add {
-        background: #d67182;
+        background: #99d671;
         box-shadow: 1px 3px 6px #a3a3a3;
         padding: 50px 30px;
         width: 300px;

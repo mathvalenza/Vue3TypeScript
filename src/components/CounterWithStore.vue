@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
     <div class="bg-gray-300 h-64 w-4/6 mx-auto shadow-md flex flex-col justify-center items-center">
-      <h3 class="text-xl font-semibold">Increment Counter</h3>
+      <h3 class="text-xl font-semibold">Increment Counter using Vuex</h3>
       <button
-        class="bg-red-500 text-blue-900 border rounded-lg px-8 m-4 h-10 text-2xl font-bold focus:outline-none"
+        class="custom-button border rounded-lg px-8 m-4 h-10 text-2xl font-bold focus:outline-none"
         @click="inc()"
       >Press Me</button>
       <h5 class="text-3xl">Counter: {{count.counter}}</h5>
@@ -38,6 +38,10 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.custom-button {
+  background-color: #99d671;
+}
+
 h3 {
   margin: 40px 0 0;
 }
